@@ -86,10 +86,10 @@ public class DummyData implements SectionalUniqueObject<K> {...}
 Kotlin:
 class DummyData : SectionalUniqueObject<K> {...}
 ```
-   **note:** after implement **SectionalUniqueObject** interface it force you to override two methods
+**note:** after implement **SectionalUniqueObject** interface it force you to override two methods
    
-    - **getSection()** of return type **"K"**: this method return SectionModel to which this object belong  
-    - **getUniqueKey()** of return type **"Object"** (**"Any"** in Kotlin): this method return unique key or id of sectionItem to avoid repetition of item in same section
+* **getSection()** of return type **"K"**: this method return SectionModel to which this object belong  
+* **getUniqueKey()** of return type **"Object"** (**"Any"** in Kotlin): this method return unique key or id of sectionItem to avoid repetition of item in same section
 
 after extending the **SectionalGridAdapter** it will force you to override methods given bellow:
 
@@ -112,6 +112,22 @@ if you wanted to sort data showing through Sectional RecyclerAdapter or GridAdap
 - **compareSectionItems** with two parameters of type **T** i.e. `SectionItemModel` with int return type.
 
 these method are just like simple _Comparator_ method `onCompare`
+
+### Licence: ###
+
+Copyright (C) 2018 Muhammad Muzammil Sharif
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software  
+ distributed under the License is distributed on an "AS IS" BASIS,  
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
+ See the License for the specific language governing permissions and
+ limitations under the License.
 
 
 [javaDummyGridAdapter]: https://github.com/MuhammadMuzammilSharif/sectionalAdapter/blob/master/app/src/main/java/io/github/muhammadmuzammilsharif/sectionaladapterdemo/Adapter/GridViewAdapter.java
